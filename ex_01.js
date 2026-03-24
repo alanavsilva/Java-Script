@@ -1,3 +1,4 @@
+
 function somar_numeros() {
     let soma = 0;
     let continuar = true;
@@ -6,10 +7,10 @@ function somar_numeros() {
         let numero = parseFloat(prompt("Digite um número (ou digite 0 para finalizar): "))
         if (!isNaN(numero)) {
             soma += numero;
-        }else{
+        } else {
             alert("Por favor, digite um número válido!")
         }
         continuar = confirm("Deseja adicionar mais números?");
     }
     alert("A soma dos números é: " + soma);
-        }
+}
