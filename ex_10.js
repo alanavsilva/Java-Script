@@ -4,9 +4,14 @@ function folha_pagamento() {
    let nome = prompt("Informe seu nome:");
    let bruto = Number(prompt("Informe seu salário bruto:"));
 
-   let desconto = bruto * 0.08
+   let desconto = bruto*0.08
    let liquido = bruto - desconto
 
-   alert("Folha de pagamento\n" + nome, "Salário bruto: \n" + bruto, "Porcentagem do desconto INSS (8%) aplicada: \n" + desconto, "Salário líquido: " + liquido);
-
+   alert(
+   "Folha de pagamento\n" +
+   "Nome: " + nome + "\n" +
+   "Salário bruto: " + bruto + "\n" +
+   "Desconto INSS (8%): " + desconto + "\n" +
+   "Salário líquido: " + liquido
+   );
 }
